@@ -24,17 +24,18 @@
      - Incremento la variable "operador" en uno.
      - Actualizo el contenido de texto de "numeroTurno" con el valor de "operador" convertido a cadena y con ceros adicionales si es necesario.
 
-   - Añado un event listener para cuando se haga clic en el botón "anterior".
-   * Y  Si el valor de "operador" es mayor o igual a 1:
+    * Y SI "anterior" es un botón HTML válido      
+     - Añado un event listener para cuando se haga clic en el botón "anterior".
+     -Y  Si el valor de "operador" es mayor o igual a 1:
      - Decremento la variable "operador" en uno.
      - Actualizo el contenido de texto de "numeroTurno" con el valor de "operador" convertido a cadena y con ceros adicionales si es necesario.
 
+    * Y SI "reset" es un botón HTML válido   
+    - Añado un event listener para cuando se haga clic en el botón "reset".
+    - Establezco el valor de la variable "operador" a 0.
+    - Actualizo el contenido de texto de "numeroTurno" con el valor de "operador" convertido a cadena y con ceros adicionales si es necesario.
 
-   - Añado un event listener para cuando se haga clic en el botón "reset".
-   - Establezco el valor de la variable "operador" a 0.
-   - Actualizo el contenido de texto de "numeroTurno" con el valor de "operador" convertido a cadena y con ceros adicionales si es necesario.
-
-
+    * Y SI "ingresar" es un botón HTML válido   
    - Añado un event listener para cuando se haga clic en el botón "ingresar".
    - Busco el elemento HTML con el id "turno-manual" y lo guardo en la variable "turnoManual".
    * Y Si "turnoManual" es un campo de entrada válido:

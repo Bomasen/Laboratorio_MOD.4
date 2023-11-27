@@ -7,9 +7,9 @@ if (numeroTurno instanceof HTMLElement) {
 }
 
 const siguiente = document.getElementById("siguiente");
-const anterior = document.getElementById("anterior") as HTMLButtonElement;
-const reset = document.getElementById("reset") as HTMLButtonElement;
-const ingresar = document.getElementById("ingresar") as HTMLButtonElement;
+const anterior = document.getElementById("anterior") ;
+const reset = document.getElementById("reset");
+const ingresar = document.getElementById("ingresar");
 
 if (numeroTurno !== null) {
   if (siguiente instanceof HTMLButtonElement) {
@@ -19,18 +19,21 @@ if (numeroTurno !== null) {
     });
   }
 
+if(anterior instanceof HTMLButtonElement){
   anterior.addEventListener("click", () => {
     if (operador >= 1) {
       --operador;
       numeroTurno.innerHTML = operador.toString().padStart(2, "0");
     }
-  });
+  })};
 
+ if(reset instanceof HTMLButtonElement){ 
   reset.addEventListener("click", () => {
     operador = 0;
     numeroTurno.innerHTML = operador.toString().padStart(2, "0");
-  });
+  })};
 
+  if(ingresar instanceof HTMLButtonElement){ 
   ingresar.addEventListener("click", () => {
     const turnoManual = document.getElementById("turno-manual");
     if (turnoManual instanceof HTMLInputElement) {
@@ -39,5 +42,5 @@ if (numeroTurno !== null) {
         numeroTurno.innerHTML = operador.toString().padStart(2, "0");
       }
     }
-  });
+  })};
 }
